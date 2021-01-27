@@ -59,7 +59,6 @@ namespace YoUrSeCrEtS
             this.RightTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.RightTextBox.Size = new System.Drawing.Size(400, 383);
             this.RightTextBox.TabIndex = 1;
-            this.RightTextBox.TextChanged += new System.EventHandler(this.RightTextBox_TextChanged);
             // 
             // LeftToRightButton
             // 
@@ -79,6 +78,7 @@ namespace YoUrSeCrEtS
             this.RightToLeftButton.TabIndex = 5;
             this.RightToLeftButton.Text = "<-";
             this.RightToLeftButton.UseVisualStyleBackColor = true;
+            this.RightToLeftButton.Click += new System.EventHandler(this.RightToLeftButton_Click);
             // 
             // LeftComboBox
             // 

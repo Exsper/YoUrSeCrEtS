@@ -27,8 +27,6 @@ namespace YoUrSeCrEtS
             encodings.Add("Unicode (UTF-32)", "utf-32");
             encodings.Add("Unicode (UTF-32 Big-Endian)", "utf-32BE");
         }
-        
-
 
         public Form1()
         {
@@ -66,14 +64,14 @@ namespace YoUrSeCrEtS
             RightTextBox.Text = output;
         }
 
-        private void RightTextBox_TextChanged(object sender, EventArgs e)
+        private void RightToLeftButton_Click(object sender, EventArgs e)
         {
             string input = RightTextBox.Text;
             if (input == "") return;
             string fromCoding = encodings[RightComboBox.Text];
             string toCoding = encodings[LeftComboBox.Text];
             string output = Translate(input, fromCoding, toCoding);
-            LeftComboBox.Text = output;
+            LeftTextBox.Text = output;
         }
     }
 }
